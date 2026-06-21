@@ -1,0 +1,92 @@
+<div class="container-fluid mt-4">
+
+  <div class="row">
+
+    <!-- LEFT PANEL -->
+    <div class="col-lg-3 mb-3">
+      <div class="card shadow-sm">
+        <!--<div class="card-header section-header">
+          Quick Menu
+        </div> -->
+
+        <div class="list-group list-group-flush">
+          <a class="list-group-item list-group-item-action">
+            About The Scheme
+          </a>
+
+          <a class="list-group-item list-group-item-action">
+            Facilities Available
+          </a>
+
+          <a class="list-group-item list-group-item-action">
+            Download
+          </a>
+
+          <a class="list-group-item list-group-item-action">
+            Search HoO Code
+          </a>          
+        </div>
+      </div>
+    </div>
+
+    <!-- CENTER PANEL -->
+    <div class="col-lg-6 mb-3">
+
+      <div class="card shadow-sm">
+        <div class="card-header section-header">
+          What's New / Coming Up Next
+        </div>
+
+        <div class="card-body">
+
+          <ul class="news-list">
+            @for(item of news; track item) {
+
+            <li>
+                {{ item }}
+            </li>
+
+            }
+          </ul>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div class="col-lg-3 mb-3">
+
+      <div class="card shadow-sm">
+
+        <!--<div class="card-header section-header">
+          Quick Actions
+        </div> -->
+
+        <div class="list-group list-group-flush">
+
+          <a class="list-group-item list-group-item-action">
+            May I Assist You
+          </a>
+
+          <a class="list-group-item list-group-item-action">
+            Dashboard
+          </a>
+
+          <a class="list-group-item list-group-item-action">
+            Package Details
+          </a>
+
+          <a class="list-group-item list-group-item-action">
+            CARC Status
+          </a>
+          
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

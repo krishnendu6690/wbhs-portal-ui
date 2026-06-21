@@ -1,0 +1,38 @@
+.navbar {
+  background: #EBDEBC;
+}
+
+.nav-link {
+  color: black !important;
+  font-family: Verdana;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 8px 17px !important;  
+}
+
+.nav-link:hover {
+  color: #ffe8e2 !important;
+}
+
+.login-btn {
+  color: #F64E2C;
+  font-weight: 700;
+}
+
+/* Separator */
+.navbar-nav .nav-item {
+  position: relative;
+  //margin: 0 12px;
+}
+
+.navbar-nav .nav-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 1px;
+  height: 39px;
+  padding-left: 1px;
+  background: rgba(255,255,255,0.9);
+  transform: translateY(-50%) rotate(20deg);
+}
