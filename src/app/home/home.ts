@@ -12,4 +12,24 @@ export class Home {
   'Doctor Details Available',
   'Online Enrollment Started'
   ];
+  employeeStats = [
+  { title: 'Registered Employees', value: '152000' },
+  { title: 'Beneficiaries', value: '450000' },
+  { title: 'Cards Generated', value: '430000' },
+  { title: 'Hospitals Availed', value: '350' }
+];
+
+pensionerStats = [
+  { title: 'Registered Pensioners', value: '85000' },
+  { title: 'Beneficiaries', value: '230000' },
+  { title: 'Cards Generated', value: '210000' },
+  { title: 'Hospitals Availed', value: '350' }
+];
+
+circulars = [
+  'WBHS Circular No. 01/2025',
+  'Package Rate Revision Notice',
+  'New Enrollment Guideline',
+  'Hospital Empanelment Update'
+];
 }

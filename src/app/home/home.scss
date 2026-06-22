@@ -22,3 +22,81 @@
   color: #F64E2C;
   cursor: pointer;
 }
+
+.stats-card {
+  //background: transparent !important;
+  border: none;
+  text-align: center;
+  color: #5C3317;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+  height: 190px;
+  background-color: #ffffff;
+}
+
+.stats-header {
+  background: #a1926d;
+  color: #fcfcfc;
+  text-align: center;
+  padding: 10px;
+  font-weight: 600;
+}
+
+.stats-body {
+  height: 290px;
+  overflow: hidden;
+  position: relative;
+}
+
+.stats-item {
+  padding: 10px 15px;
+  border-bottom: 1px solid gray;
+}
+
+.stats-item-circular {
+  text-align: left;
+  padding: 5px 15px;
+  //border-bottom: 1px solid gray;
+}
+
+.stats-item:last-child {
+  border-bottom: none;
+}
+
+.label {
+  color: #555;
+  font-size: 14px;
+}
+
+.value {
+  color: #F64E2C;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.employee-scroll {
+  animation: scrollUp 15s linear infinite;
+}
+
+.circular-scroll {
+  animation: scrollUp 15s linear infinite;
+}
+
+.pension-scroll {
+  animation: scrollUp 15s linear infinite;
+}
+
+.stats-body:hover .scroll-content {
+  animation-play-state: paused;
+}
+
+@keyframes scrollUp {
+  from {
+    transform: translateY(40%);
+  }
+
+  to {
+    transform: translateY(-50%);
+  }
+}
