@@ -100,3 +100,93 @@
     transform: translateY(-50%);
   }
 }
+
+.bottom-strip {
+  display: flex;
+  justify-content: space-around;
+
+  background: #efe3bc;
+
+  border: 1px solid #d8c79d;
+
+  margin-top: 8px;
+
+  padding: 6px;
+
+  text-align: center;
+}
+
+.strip-item {
+  font-size: 18px;
+}
+
+.count {
+  color: red;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.side-card {
+  background: #fff;
+  border: 1px solid #d8d8d8;
+  text-align: center;
+  padding: 15px;
+  min-height: 95px;
+}
+
+.side-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.side-subtext {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.tiles-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.portal-tile {
+  width: 140px;
+  min-height: 140px;
+
+  background: #f3e6b3;
+  border: 1px solid #cdbf8f;
+
+  border-radius: 4px;
+
+  text-align: center;
+
+  padding: 10px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.portal-tile:hover {
+  transform: translateY(-2px);
+}
+
+.portal-tile img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.portal-tile span {
+  display: block;
+  margin-top: 8px;
+
+  font-size: 13px;
+  font-weight: 600;
+}

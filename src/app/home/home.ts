@@ -32,4 +32,19 @@ circulars = [
   'New Enrollment Guideline',
   'Hospital Empanelment Update'
 ];
+
+bottomStats = [
+  {
+    value: 204,
+    text: 'Empanelled Private Hospitals'
+  },
+  {
+    value: 30,
+    text: 'Empanelled Diagnostic Centres'
+  },
+  {
+    value: 1477,
+    text: 'Ongoing Treatments'
+  }
+];
 }

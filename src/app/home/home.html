@@ -85,85 +85,221 @@
 
       </div>  
     </div>
- <div class="container mt-1">
+    <!-- STATISTICS & CIRCULAR PANEL -->
+    <div class="container mt-1">
 
-  <div class="row">
+      
+      <div class="row">
 
-    <!-- Employee Statistics -->
-    <div class="col-md-3">
-      <div class="stats-card">
-        <div class="stats-header">
-          Govt. Employee Statistics
+        <!-- Employee Statistics -->
+        <div class="col-md-3">
+          <div class="stats-card">
+            <div class="stats-header">
+              Govt. Employee Statistics
+            </div>
+
+            <div class="stats-body">
+
+      <div class="scroll-content employee-scroll">
+
+        @for(item of employeeStats; track item.title)
+        {
+          <div class="stats-item">
+            <div class="label">{{item.title}}</div>
+            <div class="value">{{item.value}}</div>
+          </div>
+        }
+
+      </div>
+
+    </div>
+          </div>
         </div>
 
-        <div class="stats-body">
+        <!-- Circulars -->
+        <div class="col-md-6">
+          <div class="stats-card">
+            <div class="card-header section-header">
+              Circulars & Memos
+            </div>
+            <div class="stats-body">
+              <div class="scroll-content circular-scroll">
 
-  <div class="scroll-content employee-scroll">
+                @for(item of circulars; track item)
+                {
+                  <div class="stats-item-circular">{{item}}</div>
+                }
+                @for(item of circulars; track item)
+                {
+                  <div class="stats-item-circular">{{item}}</div>
+                }
+              </div>
+            </div>
+            
+          </div>
+        </div>
 
-    @for(item of employeeStats; track item.title)
+        <!-- Pensioner Statistics -->
+        <div class="col-md-3">
+          <div class="stats-card">
+            <div class="stats-header">
+              Govt. Pensioner Statistics
+            </div>
+            <div class="stats-body">
+
+              <div class="scroll-content pension-scroll">
+
+                @for(item of pensionerStats; track item.title)
+                {
+                  <div class="stats-item">
+                    <div class="label">{{item.title}}</div>
+                    <div class="value">{{item.value}}</div>
+                  </div>
+                }
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="row mt-2">
+
+      <div class="col-lg-3">
+        <div class="col-lg-3">
+
+  <div class="side-card">
+    <div class="side-text">
+      Finance Department<br>
+      Government of West Bengal
+    </div>
+  </div>
+
+  <div class="side-card mt-2">
+    <img src="images/ifms_1.png"
+         class="img-fluid">
+  </div>
+
+  <div class="side-card mt-2">
+
+  <img src="images/e_payment.png"
+       class="img-fluid mb-2">
+
+  <div class="side-subtext">
+    Directorate of Pension,<br>
+    Provident Fund and<br>
+    Group Insurance
+  </div>
+
+</div>
+
+</div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="col-lg-6">
+
+  <!-- Statistics Strip -->
+  <div class="bottom-strip">
+
+    @for(item of bottomStats; track item.text)
     {
-      <div class="stats-item">
-        <div class="label">{{item.title}}</div>
-        <div class="value">{{item.value}}</div>
+      <div class="strip-item">
+        <span class="count">{{item.value}}</span>
+        <span>{{item.text}}</span>
       </div>
     }
 
   </div>
 
-</div>
-      </div>
+  <!-- Login Tiles -->
+  <div class="tiles-container">
+
+    <div class="portal-tile">
+      <img src="assets/images/medical-cell.png">
+      <span>Medical Cell</span>
     </div>
 
-    <!-- Circulars -->
-    <div class="col-md-6">
-      <div class="stats-card">
-        <div class="card-header section-header">
-          Circulars & Memos
-        </div>
-        <div class="stats-body">
-          <div class="scroll-content circular-scroll">
-
-            @for(item of circulars; track item)
-            {
-              <div class="stats-item-circular">{{item}}</div>
-            }
-            @for(item of circulars; track item)
-            {
-              <div class="stats-item-circular">{{item}}</div>
-            }
-          </div>
-        </div>
-        
-      </div>
+    <div class="portal-tile">
+      <img src="assets/images/ddo.png">
+      <span>DDO & HoO</span>
     </div>
 
-    <!-- Pensioner Statistics -->
-    <div class="col-md-3">
-      <div class="stats-card">
-        <div class="stats-header">
-          Govt. Pensioner Statistics
-        </div>
-        <div class="stats-body">
+    <div class="portal-tile">
+      <img src="assets/images/hospital.png">
+      <span>Hospitals</span>
+    </div>
 
-          <div class="scroll-content pension-scroll">
+    <div class="portal-tile">
+      <img src="assets/images/treasury.png">
+      <span>Treasury</span>
+    </div>
 
-            @for(item of pensionerStats; track item.title)
-            {
-              <div class="stats-item">
-                <div class="label">{{item.title}}</div>
-                <div class="value">{{item.value}}</div>
-              </div>
-            }
+    <div class="portal-tile">
+      <img src="assets/images/employee.png">
+      <span>Employee / Pensioner</span>
+    </div>
 
-          </div>
+    <div class="portal-tile">
+      <img src="assets/images/gia.png">
+      <span>GIA College / University</span>
+    </div>
 
-        </div>
-      </div>
+    <div class="portal-tile">
+      <img src="assets/images/prb.png">
+      <span>PRB Employee / Pensioner</span>
     </div>
 
   </div>
 
 </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="col-lg-3">
+
+  <div class="side-card">
+    <div class="side-text">
+      Health & Family Welfare Department<br>
+      Government of West Bengal
+    </div>
+  </div>
+
+  <div class="side-card mt-2">
+
+    <img src="images/e_office_btn_1.png"
+         class="img-fluid mb-2">
+
+    <div class="side-subtext">
+      A Digital Workplace<br>
+      Solution
+    </div>
+
+  </div>
+
+  <div class="side-card mt-2">
+
+    <img src="images/CLG_UC.png"
+         class="img-fluid mb-2">
+
+    <div class="side-subtext">
+      Department of Higher<br>
+      Education<br>
+      Govt. of West Bengal
+    </div>
+
+  </div>
+
+</div>
+      </div>
+
+    </div>
+
+
   </div>
 
 </div>
