@@ -4,10 +4,11 @@ import { Header } from "./shared/header/header";
 import { Navbar } from "./layout/navbar/navbar";
 import { Hero } from "./home/hero/hero";
 import { Home } from "./home/home";
+import { Footer } from "./layout/footer/footer";
 
 @Component({
   selector: 'app-root',
-  imports: [ Header, Navbar, Home],
+  imports: [Header, Navbar, Home, Footer],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

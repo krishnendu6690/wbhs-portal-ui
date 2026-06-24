@@ -1,7 +1,5 @@
 <div class="container-fluid mt-1">
-
   <div class="row">
-
     <!-- LEFT PANEL -->
     <div class="col-lg-3 mb-1">
       <div class="card shadow-sm">
@@ -10,296 +8,198 @@
         </div> -->
 
         <div class="list-group list-group-flush">
-          <a class="list-group-item list-group-item-action">
-            About The Scheme
-          </a>
+          <a class="list-group-item list-group-item-action"> About The Scheme </a>
 
-          <a class="list-group-item list-group-item-action">
-            Facilities Available
-          </a>
+          <a class="list-group-item list-group-item-action"> Facilities Available </a>
 
-          <a class="list-group-item list-group-item-action">
-            Download
-          </a>
+          <a class="list-group-item list-group-item-action"> Download </a>
 
-          <a class="list-group-item list-group-item-action">
-            Search HoO Code
-          </a>          
+          <a class="list-group-item list-group-item-action"> Search HoO Code </a>
         </div>
       </div>
     </div>
 
     <!-- CENTER PANEL -->
     <div class="col-lg-6 mb-1">
-
       <div class="card shadow-sm">
-        <div class="card-header section-header">
-          What's New / Coming Up Next
-        </div>
+        <div class="card-header section-header">What's New / Coming Up Next</div>
 
         <div class="card-body">
-
           <ul class="news-list">
-            @for(item of news; track item) {
-
-            <li>
+            @for (item of news; track item) {
+              <li>
                 {{ item }}
-            </li>
-
+              </li>
             }
           </ul>
-
         </div>
       </div>
-
     </div>
 
     <!-- RIGHT PANEL -->
     <div class="col-lg-3 mb-1">
-
       <div class="card shadow-sm">
-
         <!--<div class="card-header section-header">
           Quick Actions
         </div> -->
 
         <div class="list-group list-group-flush">
+          <a class="list-group-item list-group-item-action"> May I Assist You </a>
 
-          <a class="list-group-item list-group-item-action">
-            May I Assist You
-          </a>
+          <a class="list-group-item list-group-item-action"> Dashboard </a>
 
-          <a class="list-group-item list-group-item-action">
-            Dashboard
-          </a>
+          <a class="list-group-item list-group-item-action"> Package Details </a>
 
-          <a class="list-group-item list-group-item-action">
-            Package Details
-          </a>
-
-          <a class="list-group-item list-group-item-action">
-            CARC Status
-          </a>
-          
+          <a class="list-group-item list-group-item-action"> CARC Status </a>
         </div>
-
-      </div>  
+      </div>
     </div>
     <!-- STATISTICS & CIRCULAR PANEL -->
-    <div class="container mt-1">
-
-      
+    <div class="col-12 mt-1">
       <div class="row">
-
         <!-- Employee Statistics -->
         <div class="col-md-3">
           <div class="stats-card">
-            <div class="stats-header">
-              Govt. Employee Statistics
-            </div>
+            <div class="stats-header">Govt. Employee Statistics</div>
 
             <div class="stats-body">
-
-      <div class="scroll-content employee-scroll">
-
-        @for(item of employeeStats; track item.title)
-        {
-          <div class="stats-item">
-            <div class="label">{{item.title}}</div>
-            <div class="value">{{item.value}}</div>
-          </div>
-        }
-
-      </div>
-
-    </div>
+              <div class="scroll-content employee-scroll">
+                @for (item of employeeStats; track item.title) {
+                  <div class="stats-item">
+                    <div class="label">{{ item.title }}</div>
+                    <div class="value">{{ item.value }}</div>
+                  </div>
+                }
+              </div>
+            </div>
           </div>
         </div>
 
         <!-- Circulars -->
         <div class="col-md-6">
           <div class="stats-card">
-            <div class="card-header section-header">
-              Circulars & Memos
-            </div>
+            <div class="card-header section-header">Circulars & Memos</div>
             <div class="stats-body">
               <div class="scroll-content circular-scroll">
-
-                @for(item of circulars; track item)
-                {
-                  <div class="stats-item-circular">{{item}}</div>
+                @for (item of circulars; track item) {
+                  <div class="stats-item-circular">{{ item }}</div>
                 }
-                @for(item of circulars; track item)
-                {
-                  <div class="stats-item-circular">{{item}}</div>
+                @for (item of circulars; track item) {
+                  <div class="stats-item-circular">{{ item }}</div>
                 }
               </div>
             </div>
-            
           </div>
         </div>
 
         <!-- Pensioner Statistics -->
         <div class="col-md-3">
           <div class="stats-card">
-            <div class="stats-header">
-              Govt. Pensioner Statistics
-            </div>
+            <div class="stats-header">Govt. Pensioner Statistics</div>
             <div class="stats-body">
-
               <div class="scroll-content pension-scroll">
-
-                @for(item of pensionerStats; track item.title)
-                {
+                @for (item of pensionerStats; track item.title) {
                   <div class="stats-item">
-                    <div class="label">{{item.title}}</div>
-                    <div class="value">{{item.value}}</div>
+                    <div class="label">{{ item.title }}</div>
+                    <div class="value">{{ item.value }}</div>
                   </div>
                 }
-
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- Login tile(left-center-right) & strip PANEL -->
+    <div class="col-12 mt-1">
+      <div class="row mt-1">
+        <!-- Left final column -->
+        <div class="col-lg-3">
+          <div class="side-card">
+            <div class="side-text">
+              Finance Department<br />
+              Government of West Bengal
+            </div>
+          </div>
+
+          <div class="side-card mt-2">
+            <div class="logo-box">
+              <img src="images/ifms_1.png"/>
+            </div>
+            
+          </div>
+
+          <div class="side-card mt-2">
+            <div class="logo-box">
+              <img src="images/e_payment.png"/>
+            </div>            
+
+            <div class="side-subtext">
+              Directorate of Pension, Provident Fund <br />
+              and Group Insurance
             </div>
           </div>
         </div>
 
-      </div>
-
-    </div>
-
-    <div class="row mt-2">
-
-      <div class="col-lg-3">
-        <div class="col-lg-3">
-
-  <div class="side-card">
-    <div class="side-text">
-      Finance Department<br>
-      Government of West Bengal
-    </div>
-  </div>
-
-  <div class="side-card mt-2">
-    <img src="images/ifms_1.png"
-         class="img-fluid">
-  </div>
-
-  <div class="side-card mt-2">
-
-  <img src="images/e_payment.png"
-       class="img-fluid mb-2">
-
-  <div class="side-subtext">
-    Directorate of Pension,<br>
-    Provident Fund and<br>
-    Group Insurance
-  </div>
-
-</div>
-
-</div>
-      </div>
-
-      <div class="col-lg-6">
+        <!-- Final Center column -->
         <div class="col-lg-6">
+          <div class="portal-panel">
+            <!-- bottom strip -->
+            <div class="bottom-strip">
+              @for (item of bottomStats; track item.text) {
+                <div class="strip-item">
+                  <span class="count">{{ item.value }}</span>
+                  <span>{{ item.text }}</span>
+                </div>
+              }
+            </div>
 
-  <!-- Statistics Strip -->
-  <div class="bottom-strip col-lg-12">
+            <!-- Login Tiles -->
+            <div class="tiles-container">
+              @for (tile of portalTiles; track tile.title) {
+                <div class="portal-tile">
+                  <img [src]="tile.image" />
 
-    @for(item of bottomStats; track item.text)
-    {
-      <div class="strip-item">
-        <span class="count">{{item.value}}</span>
-        <span>{{item.text}}</span>
-      </div>
-    }
+                  <span>{{ tile.title }}</span>
+                </div>
+              }
+            </div>
+          </div>
+        </div>
 
-  </div>
-
-  <!-- Login Tiles -->
-  <div class="tiles-container">
-
-    <div class="portal-tile">
-      <img src="images/medical_icon.png">
-      <span>Medical Cell</span>
-    </div>
-
-    <div class="portal-tile">
-      <img src="images/DDO_icon.png">
-      <span>DDO & HoO</span>
-    </div>
-
-    <div class="portal-tile">
-      <img src="images/hospital_icon.png">
-      <span>Hospitals</span>
-    </div>
-
-    <div class="portal-tile">
-      <img src="images/tresury_icon.png">
-      <span>Treasury</span>
-    </div>
-
-    <div class="portal-tile">
-      <img src="images/emp_pen_icon.png">
-      <span>Employee / Pensioner</span>
-    </div>
-
-    <div class="portal-tile">
-      <img src="images/gia_clg_uc.png">
-      <span>GIA College / University</span>
-    </div>
-
-    <div class="portal-tile">
-      <img src="images/Panchayat2.png">
-      <span>PRB Employee / Pensioner</span>
-    </div>
-
-  </div>
-
-</div>
-      </div>
-
-      <div class="col-lg-3">
+        <!-- Right final column -->
         <div class="col-lg-3">
+          <div class="side-card">
+            <div class="side-text">
+              Health & Family Welfare Department<br />
+              Government of West Bengal
+            </div>
+          </div>
 
-  <div class="side-card">
-    <div class="side-text">
-      Health & Family Welfare Department<br>
-      Government of West Bengal
-    </div>
-  </div>
+          <div class="side-card mt-2">
+            <div class="logo-box">
+              <img src="images/e_office_btn_1.png" />
+            </div>
 
-  <div class="side-card mt-2">
+            <div class="side-subtext">
+              A Digital Workplace<br />
+              Solution
+            </div>
+          </div>
 
-    <img src="images/e_office_btn_1.png"
-         class="img-fluid mb-2">
+          <div class="side-card mt-2">
+            <div class="logo-box">
+              <img src="images/CLG_UC.png"/>
+            </div>
 
-    <div class="side-subtext">
-      A Digital Workplace<br>
-      Solution
-    </div>
-
-  </div>
-
-  <div class="side-card mt-2">
-
-    <img src="images/CLG_UC.png"
-         class="img-fluid mb-2">
-
-    <div class="side-subtext">
-      Department of Higher<br>
-      Education<br>
-      Govt. of West Bengal
-    </div>
-
-  </div>
-
-</div>
+            <div class="side-subtext">
+              Department of Higher Education <br />
+              Govt. of West Bengal
+            </div>
+          </div>
+        </div>
       </div>
-
     </div>
-
-
   </div>
-
 </div>

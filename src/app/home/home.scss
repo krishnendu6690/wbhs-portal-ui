@@ -101,24 +101,51 @@
   }
 }
 
-.bottom-strip {
+/*.bottom-strip {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 
   background: #efe3bc;
 
-  border: 1px solid #d8c79d;
-
-  margin-top: 8px;
+  border: 1px solid #d7c79a;
 
   padding: 6px;
-
-  text-align: center;
 }
 
 .strip-item {
-  font-size: 18px;
+  text-align: center;
+  font-size: small;
+  //padding-left: 25px;
+  flex: 1;
+}*/
+.bottom-strip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #efe3bc;
+  border: 1px solid #d7c79a;
+
+  padding: 6px 10px;
+  gap: 15px;   // add this
+  margin-bottom: 0;
+  width: 100%;
+  border-radius: 5px;
 }
+
+.strip-item {
+  flex: 1;
+  text-align: center;
+  white-space: nowrap;  // keep text on one line
+  font-size: 14px;
+  //padding-right: px;
+}
+
+//.strip-item:not(:last-child) {
+  //border-right: 1px solid #c9b98a;
+  //padding-left: 5px;
+//}
 
 .count {
   color: red;
@@ -127,37 +154,87 @@
 }
 
 .side-card {
+  //background: #fff;
+  //border: 1px solid #d8d8d8;
+  //text-align: center;
+  //padding: 15px;
+  //min-height: 95px;
+  //width: 100%;
+  //border-radius: 5px;
+  height: 120px;
+  text-align: center;
+
   background: #fff;
   border: 1px solid #d8d8d8;
-  text-align: center;
-  padding: 15px;
-  min-height: 95px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 8px;
+  border-radius: 5px;
+  //padding: 10px;
+  max-height: 100px;
 }
 
 .side-text {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.4;
 }
 
 .side-subtext {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
   line-height: 1.2;
   text-align: center;
+  width: 100%;
+}
+
+.side-card img {
+  max-width: 90%;
+  margin: auto;
+  display: block;
+}
+
+/*.logo-box {
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-box img {
+  max-height: 60px;
+  max-width: 100%;
+  object-fit: contain;
+}*/
+.logo-box {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-box img {
+  max-height: 55px;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .tiles-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 12px;
-  margin-top: 10px;
+  row-gap: 8px;
+  column-gap: 12px;
+  margin-top: 5px;
 }
 
 .portal-tile {
   width: 140px;
-  min-height: 140px;
+  min-height: 120px;
 
   background: #f8f7f2;
   border: 1px solid #cdbf8f;
@@ -190,3 +267,4 @@
   font-size: 13px;
   font-weight: 600;
 }
+

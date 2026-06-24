@@ -47,4 +47,36 @@ bottomStats = [
     text: 'Ongoing Treatments'
   }
 ];
+
+portalTiles = [
+  {
+    title: 'Medical Cell',
+    image: 'images/medical_icon.png'
+  },
+  {
+    title: 'DDO & HoO',
+    image: 'images/DDO_icon.png'
+  },
+  {
+    title: 'Hospitals',
+    image: 'images/hospital_icon.png'
+  },
+  {
+    title: 'Treasury',
+    image: 'images/tresury_icon.png'
+  },
+  {
+    title: 'Employee / Pensioner',
+    image: 'images/emp_pen_icon.png'
+  },
+  {
+    title: 'GIA College / University',
+    image: 'images/gia_clg_uc.png'
+  },
+  {
+    title: 'PRB Employee / Pensioner',
+    image: 'images/Panchayat2.png'
+  }
+];
+
 }
