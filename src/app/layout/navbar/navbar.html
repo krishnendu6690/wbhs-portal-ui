@@ -1,20 +1,19 @@
 <nav class="navbar navbar-expand-lg navbar-dark">
   <div class="container-fluid">
-
     <button
       class="navbar-toggler"
       type="button"
       data-bs-toggle="collapse"
-      data-bs-target="#navbarMenu">
+      data-bs-target="#navbarMenu"
+    >
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarMenu">
-
       <ul class="navbar-nav me-auto">
-
         <li class="nav-item">
-          <a routerLink="/home" class="nav-link active">Home Page</a>
+          <a class="nav-link active-menu">Home Page</a>
+          <!--<a routerLink="/home" class="nav-link active">Home Page</a> -->
         </li>
 
         <li class="nav-item">
@@ -26,39 +25,77 @@
         </li>
 
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle"
-             data-bs-toggle="dropdown">
-             Online Enrolment
-          </a>
+          <a class="nav-link dropdown-toggle" href="#"> Online Enrolment </a>
 
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item">Employee</a></li>
-            <li><a class="dropdown-item">Pensioner</a></li>
-            <li><a class="dropdown-item">College</a></li>
-            <li><a class="dropdown-item">University</a></li>
+          <ul class="dropdown-menu custom-dropdown">
+            <li>
+              <a class="dropdown-item" href="#">
+                <span>Govt. Employee</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="dropdown-item" href="#">
+                <span>Govt. Pensioner</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="dropdown-item" href="#">
+                <span>Beneficiaries of Grant-in-Aid College</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="dropdown-item" href="#">
+                <span>Beneficiaries of Grant-in-Aid University</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="dropdown-item" href="#">
+                <span>Employees of PR Bodies</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="dropdown-item" href="#">
+                <span>Pensioners of PR Bodies</span>
+              </a>
+            </li>
           </ul>
         </li>
 
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle"
-             data-bs-toggle="dropdown">
-             Online Claim Submission
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+            Online Claim
           </a>
 
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item">Govt. Beneficiary</a></li>
-            <li><a class="dropdown-item">GIA Beneficiary</a></li>
-            <li><a class="dropdown-item">Panchyat Beneficiary</a></li>
+          <ul class="dropdown-menu custom-dropdown">
+            <li>
+              <a class="dropdown-item" href="#">
+                <span>Govt. Employee & Pensioner</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="dropdown-item" href="#">
+                <span>GIA College & University</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="dropdown-item" href="#">
+                <span>PR Bodies Employee & Pensioner</span>
+              </a>
+            </li>
           </ul>
         </li>
 
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle"
-             data-bs-toggle="dropdown">
-             Hospital
-          </a>
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"> Hospital </a>
 
-          <ul class="dropdown-menu">
+          <ul class="dropdown-menu custom-dropdown">
             <li><a class="dropdown-item">Empaneled Hospitals</a></li>
             <li><a class="dropdown-item">Authenticate Beneficiary</a></li>
             <li><a class="dropdown-item">Permission</a></li>
@@ -76,14 +113,9 @@
         <li class="nav-item">
           <a class="nav-link">Contact Us</a>
         </li>
-
       </ul>
 
-      <button class="btn btn-light login-btn">
-        Login
-      </button>
-
+      <button class="btn btn-light login-btn">Login</button>
     </div>
-
   </div>
 </nav>

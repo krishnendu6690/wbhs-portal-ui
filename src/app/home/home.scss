@@ -197,6 +197,48 @@
   display: block;
 }
 
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.card-link:hover {
+  color: #F64E2C;
+}
+
+.card-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  color: inherit;
+
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+/*.card-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,.15);
+  border-color: #a1926d;
+}*/
+
+.card-button:hover {
+  background-color: #FFE9E5;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 4px 12px rgba(0,0,0,.15);
+
+  border-color: #a1926d;
+}
+
+.card-button:active {
+  transform: translateY(0);
+}
+
 /*.logo-box {
   height: 70px;
 
