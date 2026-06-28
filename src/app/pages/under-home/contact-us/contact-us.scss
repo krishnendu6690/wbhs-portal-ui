@@ -1,0 +1,73 @@
+.section-header {
+  background: transparent;
+  border: none;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #5c3317;
+  padding: 18px;
+  padding-top: 4px;
+  padding-bottom: 2px;
+}
+
+
+
+.portal-card{
+
+    border:1px solid #d7c79a;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.12);
+
+}
+
+.portal-header{
+
+    background:#efe3bc;
+
+    color:#5c3317;
+
+    font-weight:700;
+
+    text-align:center;
+
+}
+
+.contact-row{
+
+    padding:15px 0;
+
+    border-bottom:1px solid #ececec;
+
+}
+
+.contact-row:last-child{
+
+    border-bottom:none;
+
+}
+
+.contact-row h6{
+
+    font-weight:700;
+
+}
+
+.contact-row p{
+
+    margin:4px 0;
+
+}
+
+.table th{
+
+    background:#efe3bc;
+
+    text-align:center;
+
+}
+
+.table td{
+
+    vertical-align:middle;
+
+}

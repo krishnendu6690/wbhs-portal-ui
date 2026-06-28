@@ -68,10 +68,11 @@
   color: #fff;
 
   border: 2px solid #cecbcb;
-  border-radius: 60px;
+  border-radius: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.719);
+  background: linear-gradient(#ff9a5a, #e85b2c);
 
-  padding: 8px 28px;
+  padding: 8px 40px;
   font-weight: 700;
 
   transition: .3s;
@@ -113,6 +114,7 @@
     border-radius:6px;
     overflow:hidden;
     box-shadow:0 6px 16px rgba(0, 0, 0, 0.658);
+
 }
 
 .custom-dropdown .dropdown-item {
