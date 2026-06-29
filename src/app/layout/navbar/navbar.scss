@@ -1,5 +1,6 @@
 .navbar {
-  background: #EBDEBC;
+  //background: #EBDEBC;
+   background: #c0b59b;
 }
 
 .login-btn {
@@ -11,6 +12,7 @@
 .navbar-nav .nav-item {
   position: relative;
   //margin: 0 12px;
+
 }
 
 .navbar-nav .nav-item:not(:last-child)::after {
@@ -32,7 +34,7 @@
   font-size: 15px;
   font-weight: 500;
 
-  padding: 10px 17px !important;
+  padding: 10px 20px !important;
 
   transition: .3s;
   z-index: 1;

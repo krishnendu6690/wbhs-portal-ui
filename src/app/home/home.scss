@@ -269,44 +269,60 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  row-gap: 8px;
-  column-gap: 12px;
-  margin-top: 5px;
+  row-gap: 12px;
+  column-gap: 7px;
+  margin-top: 5px;  
 }
 
 .portal-tile {
   width: 140px;
-  min-height: 120px;
+  height: 120px;
 
-  background: #f8f7f2;
   border: 1px solid #cdbf8f;
-
   border-radius: 4px;
 
-  text-align: center;
+  background: #f8f7f2;
 
-  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   cursor: pointer;
-
   transition: 0.3s;
+  box-shadow: 0 4px 6px rgb(34, 34, 34);
 }
 
 .portal-tile:hover {
   transform: translateY(-2px);
 }
 
-.portal-tile img {
-  width: 70px;
-  height: 70px;
+/* 🔥 This gives equal padding from all sides */
+.tile-inner {
+  width: 100%;
+  height: 100%;
+
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 🔥 Image properly scaled */
+.tile-inner img {
+  max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
 }
 
-.portal-tile span {
-  display: block;
-  margin-top: 8px;
-
+/* Text */
+.tile-inner span {
+  margin-top: 6px;
   font-size: 13px;
   font-weight: 600;
+  text-align: center;
 }
+
+
 
