@@ -1,6 +1,8 @@
 .navbar {
   //background: #EBDEBC;
    background: #c0b59b;
+   padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .login-btn {
@@ -74,7 +76,7 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.719);
   background: linear-gradient(#ff9a5a, #e85b2c);
 
-  padding: 8px 40px;
+  padding: 5px 40px;
   font-weight: 700;
 
   transition: .3s;

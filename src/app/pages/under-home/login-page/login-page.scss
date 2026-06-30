@@ -182,3 +182,111 @@
 
     background:#ffa569;
 }
+
+.login-submit{
+
+    background:#e85b2c;
+    color:#fff;
+
+    min-width:110px;
+    height:42px;
+
+    border:none;
+
+    border-radius:6px;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.login-submit:hover{
+
+    background:#ff8a3d;
+}
+
+.cancel-btn{
+
+    background:#8b8b8b;
+    color:#fff;
+
+    min-width:110px;
+    height:42px;
+
+    border:none;
+
+    border-radius:6px;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.cancel-btn:hover{
+
+    background:#6d6d6d;
+}
+
+.login-footer{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:6px;
+}
+
+.online-users{
+
+    margin:0;
+
+    font-size:15px;
+
+    color:#444;
+}
+
+.online-users span{
+
+    color:#d30000;
+
+    font-weight:700;
+}
+
+.forgot-link{
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    color:#0d6efd;
+}
+
+.forgot-link:hover{
+
+    text-decoration:underline;
+}
+
+.captcha-box {
+
+    width: 120px;
+    height: 42px;
+
+    border: 1px solid #c9c9c9;
+    border-radius: 4px;
+
+    background: #f8f8f8;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 4px;
+
+    color: #184f85;
+
+    user-select: none;
+}

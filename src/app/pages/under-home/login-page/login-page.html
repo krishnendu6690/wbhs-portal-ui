@@ -5,13 +5,24 @@
         <div class="card-header login-header">Login</div>
 
         <div class="card-body">
-          <form>
+          <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
             <!-- User ID -->
             <div class="row mb-3 align-items-center">
               <label class="col-sm-4 col-form-label fw-semibold"> User ID </label>
 
               <div class="col-sm-8">
-                <input type="text" class="form-control login-input" placeholder="Enter User ID" />
+                <input
+                  type="text"
+                  class="form-control login-input"
+                  placeholder="Enter User ID"
+                  formControlName="userId"
+                />
+                @if (
+                  loginForm.controls.userId.touched &&
+                  loginForm.controls.userId.hasError('required')
+                ) {
+                  <div class="text-danger small mt-1">User ID is required.</div>
+                }
               </div>
             </div>
 
@@ -24,54 +35,69 @@
                   type="password"
                   class="form-control login-input"
                   placeholder="Enter Password"
+                  formControlName="password"
                 />
+                @if (
+                  loginForm.controls.password.touched &&
+                  loginForm.controls.password.hasError('required')
+                ) {
+                  <div class="text-danger small mt-1">Password is required.</div>
+                }
               </div>
             </div>
 
-           <!-- Captcha -->
-<div class="row mb-4 align-items-center">
+            <!-- Captcha -->
+            <div class="row mb-4 align-items-center">
+              <label class="col-sm-4 col-form-label fw-semibold"> Enter Captcha </label>
 
-  <label class="col-sm-4 col-form-label fw-semibold">
-    Enter Captcha
-  </label>
+              <div class="col-sm-8">
+                <div class="captcha-wrapper">
+                  <!-- Input -->
+                  <input
+                    type="text"
+                    class="form-control login-input captcha-input"
+                    placeholder="Enter Captcha"
+                    id="CaptchaText"
+                    formControlName="captcha"
+                  />
 
-  <div class="col-sm-8">
+                  <!-- Captcha Image -->
+                  <div class="captcha-box">
+                    {{ captchaText }}
+                  </div>
 
-    <div class="captcha-wrapper">
+                  <!-- Refresh -->
+                  <button type="button" class="refresh-btn" (click)="generateCaptcha()">
+                    <i class="bi bi-arrow-repeat"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
 
-      <!-- Input -->
-      <input
-        type="text"
-        class="form-control login-input captcha-input"
-        placeholder="Enter Captcha">
+            <!-- Buttons -->
+            <div class="row mb-3">
+              <div class="offset-sm-4 col-sm-8">
+                <div class="d-flex gap-3">
+                  <button type="submit" class="btn login-submit">Login</button>
 
-      <!-- Captcha Image -->
-      <div class="captcha-box">
-        <img
-          src="images/captcha.png"
-          class="captcha-img"
-          alt="Captcha">
-      </div>
-
-      <!-- Refresh -->
-      <button
-        type="button"
-        class="refresh-btn">
-
-        <i class="bi bi-arrow-repeat"></i>
-
-      </button>
-
-    </div>
-
-  </div>
-
-</div>
+                  <button type="reset" class="btn cancel-btn">Cancel</button>
+                </div>
+              </div>
+            </div>
           </form>
 
-          <!-- Buttons -->
+          <div class="row">
+            <div class="offset-sm-4 col-sm-8">
+              <div class="login-footer">
+                <p class="online-users">
+                  No. of Online Users :
+                  <span>820</span>
+                </p>
 
-          <!-- Forgot Password -->
+                <a href="#" class="forgot-link"> Forgot Password? </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
