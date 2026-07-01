@@ -1,0 +1,115 @@
+<div class="container-fluid mt-1">
+  <div class="card shadow-sm">
+    <div class="card-header section-header">Contact Us</div>
+    <div class="row justify-content-center">
+      <div class="row mt-4">
+        <!-- Technical -->
+        <div class="col-lg-6">
+          <div class="card portal-card">
+            <div class="card-header portal-header">Govt. Employee & Pensioner (Technical Only)</div>
+
+            <div class="card-body">
+              <div class="row">
+                @for (contact of technicalContacts; track contact.title) {
+                  <div class="col-md-6" [class.border-end]="!$last">
+                    <h6 class="contact-title">
+                      {{ contact.title }}
+                    </h6>
+
+                    <div class="contact-info">
+                      <i class="bi bi-telephone-fill"></i>
+                      <span>{{ contact.phone }}</span>
+                    </div>
+
+                    <div class="contact-info">
+                      <i class="bi bi-envelope-fill"></i>
+                      <span>{{ contact.email }}</span>
+                    </div>
+                  </div>
+                }
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- GIA -->
+
+        <div class="col-lg-3">
+          <div class="card portal-card">
+            <div class="card-header portal-header">GIA Colleges & Universities</div>
+
+            <div class="card-body text-center">
+              <p>
+                <i class="bi bi-telephone-fill"></i>
+
+                {{ giaContact.phone }}
+              </p>
+
+              <p>
+                <i class="bi bi-envelope-fill"></i>
+
+                {{ giaContact.email }}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- PR Bodies -->
+
+        <div class="col-lg-3">
+          <div class="card portal-card">
+            <div class="card-header portal-header">Panchayati Raj Bodies</div>
+
+            <div class="card-body text-center">
+              <p>
+                <i class="bi bi-telephone-fill"></i>
+
+                {{ prbContact.phone }}
+              </p>
+
+              <p>
+                <i class="bi bi-envelope-fill"></i>
+
+                {{ prbContact.email }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Officials -->
+
+      <div class="row mt-4">
+        <div class="card-header portal-header">Officials of Medical Cell</div>
+
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle">
+              <thead>
+                <tr>
+                  <th>Name</th>
+
+                  <th>Designation</th>
+
+                  <th>Email</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                @for (person of officials; track person.name) {
+                  <tr>
+                    <td>{{ person.name }}</td>
+
+                    <td>{{ person.designation }}</td>
+
+                    <td>{{ person.email }}</td>
+                  </tr>
+                }
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

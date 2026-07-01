@@ -1,3 +1,16 @@
 import { Routes } from '@angular/router';
 
-export const routes: Routes = [];
+import { Home } from './home/home';
+import { AboutUs } from './pages/under-home/about-us/about-us';
+import { CircularMemos } from './pages/under-home/circular-memos/circular-memos';
+import { ContactUs } from './pages/under-home/contact-us/contact-us';
+import { LoginPage } from './pages/under-home/login-page/login-page';
+
+export const routes: Routes = [
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'home', component: Home },
+  { path: 'about', component: AboutUs },
+  { path: 'login', component: LoginPage },
+  { path: 'contact', component: ContactUs },
+  { path: 'circulars', component: CircularMemos },
+];

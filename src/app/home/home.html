@@ -1,7 +1,7 @@
 <div class="container-fluid mt-1">
   <div class="row">
     <!-- LEFT PANEL -->
-    <div class="col-lg-3 mb-1">
+    <div class="col-lg-2 mb-1">
       <div class="card shadow-sm">
         <!--<div class="card-header section-header">
           Quick Menu
@@ -20,7 +20,7 @@
     </div>
 
     <!-- CENTER PANEL -->
-    <div class="col-lg-6 mb-1">
+    <div class="col-lg-8 mb-1">
       <div class="card shadow-sm">
         <div class="card-header section-header">What's New / Coming Up Next</div>
 
@@ -37,7 +37,7 @@
     </div>
 
     <!-- RIGHT PANEL -->
-    <div class="col-lg-3 mb-1">
+    <div class="col-lg-2 mb-1">
       <div class="card shadow-sm">
         <!--<div class="card-header section-header">
           Quick Actions
@@ -58,7 +58,7 @@
     <div class="col-12 mt-1">
       <div class="row">
         <!-- Employee Statistics -->
-        <div class="col-md-3">
+        <div class="col-md-2">
           <div class="stats-card">
             <div class="stats-header">Govt. Employee Statistics</div>
 
@@ -76,7 +76,7 @@
         </div>
 
         <!-- Circulars -->
-        <div class="col-md-6">
+        <div class="col-md-8">
           <div class="stats-card">
             <div class="card-header section-header">Circulars & Memos</div>
             <div class="stats-body">
@@ -93,7 +93,7 @@
         </div>
 
         <!-- Pensioner Statistics -->
-        <div class="col-md-3">
+        <div class="col-md-2">
           <div class="stats-card">
             <div class="stats-header">Govt. Pensioner Statistics</div>
             <div class="stats-body">
@@ -115,51 +115,46 @@
     <div class="col-12 mt-1">
       <div class="row mt-1">
         <!-- Left final column -->
-        <div class="col-lg-3">
+        <div class="col-lg-2">
           <a
-              href="https://finance.wb.gov.in/Fin_New/HomePage.aspx"
-              target="_blank"
-              class="card-link"
-            >
-          <div class="side-card card-button">            
-            <div class="side-text">
-              Finance Department<br />
-              Government of West Bengal
+            href="https://finance.wb.gov.in/Fin_New/HomePage.aspx"
+            target="_blank"
+            class="card-link"
+          >
+            <div class="side-card card-button">
+              <div class="side-text">
+                Finance Department<br />
+                Government of West Bengal
+              </div>
             </div>
-             
-          </div>
           </a>
           <a
-              href="https://www.wbifms.gov.in/PORTAL/postlogin.html"
-              target="_blank"
-              class="card-link"
-            >
-          <div class="side-card mt-2 card-button">
-            <div class="logo-box card-button">
-              <img src="images/ifms_1.png"/>
-            </div>            
-          </div>
+            href="https://www.wbifms.gov.in/PORTAL/postlogin.html"
+            target="_blank"
+            class="card-link"
+          >
+            <div class="side-card mt-2 card-button">
+              <div class="logo-box card-button">
+                <img src="images/ifms_1.png" />
+              </div>
+            </div>
           </a>
-          <a
-              href="https://epension.wb.gov.in"
-              target="_blank"
-              class="card-link"
-            >
-          <div class="side-card mt-2 card-button">
-            <div class="logo-box">
-              <img src="images/e_payment.png"/>
-            </div>            
+          <a href="https://epension.wb.gov.in" target="_blank" class="card-link">
+            <div class="side-card mt-2 card-button">
+              <div class="logo-box">
+                <img src="images/e_payment.png" />
+              </div>
 
-            <div class="side-subtext">
-              Directorate of Pension, Provident Fund <br />
-              and Group Insurance
+              <div class="side-subtext">
+                Directorate of Pension, Provident Fund <br />
+                and Group Insurance
+              </div>
             </div>
-          </div>
           </a>
         </div>
 
         <!-- Final Center column -->
-        <div class="col-lg-6">
+        <div class="col-lg-8">
           <div class="portal-panel">
             <!-- bottom strip -->
             <div class="bottom-strip">
@@ -175,9 +170,10 @@
             <div class="tiles-container">
               @for (tile of portalTiles; track tile.title) {
                 <div class="portal-tile">
-                  <img [src]="tile.image" />
-
-                  <span>{{ tile.title }}</span>
+                  <div class="tile-inner">
+                    <img [src]="tile.image" />
+                    <!-- <span>{{ tile.title }}</span> -->
+                  </div>
                 </div>
               }
             </div>
@@ -185,52 +181,40 @@
         </div>
 
         <!-- Right final column -->
-        <div class="col-lg-3">
-           <a
-              href="https://www.wbhealth.gov.in"
-              target="_blank"
-              class="card-link"
-            >
-          <div class="side-card  card-button">
-            <div class="side-text">
-              Health & Family Welfare Department<br />
-              Government of West Bengal
+        <div class="col-lg-2">
+          <a href="https://www.wbhealth.gov.in" target="_blank" class="card-link">
+            <div class="side-card card-button">
+              <div class="side-text">
+                Health & Family Welfare Department<br />
+                Government of West Bengal
+              </div>
             </div>
-          </div>
           </a>
-         
-           <a
-              href="https://eoffice.wb.gov.in" 
-              target="_blank"
-              class="card-link"
-            >
-          <div class="side-card mt-2 card-button">
-            <div class="logo-box">
-              <img src="images/e_office_btn_1.png" />
-            </div>
 
-            <div class="side-subtext">
-              A Digital Workplace<br />
-              Solution
-            </div>
-          </div>
-           </a>
+          <a href="https://eoffice.wb.gov.in" target="_blank" class="card-link">
+            <div class="side-card mt-2 card-button">
+              <div class="logo-box">
+                <img src="images/e_office_btn_1.png" />
+              </div>
 
-            <a
-              href="https://epension.wb.gov.in"
-              target="_blank"
-              class="card-link"
-            >         
-          <div class="side-card mt-2 card-button">
-            <div class="logo-box">
-              <img src="images/CLG_UC.png"/>
+              <div class="side-subtext">
+                A Digital Workplace<br />
+                Solution
+              </div>
             </div>
+          </a>
 
-            <div class="side-subtext">
-              Department of Higher Education <br />
-              Govt. of West Bengal
+          <a href="https://epension.wb.gov.in" target="_blank" class="card-link">
+            <div class="side-card mt-2 card-button">
+              <div class="logo-box">
+                <img src="images/CLG_UC.png" />
+              </div>
+
+              <div class="side-subtext">
+                Department of Higher Education <br />
+                Govt. of West Bengal
+              </div>
             </div>
-          </div>
           </a>
         </div>
       </div>

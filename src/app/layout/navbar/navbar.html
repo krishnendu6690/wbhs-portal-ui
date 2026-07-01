@@ -12,16 +12,17 @@
     <div class="collapse navbar-collapse" id="navbarMenu">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
-          <a class="nav-link active-menu">Home Page</a>
-          <!--<a routerLink="/home" class="nav-link active">Home Page</a> -->
+          <a routerLink="/home" routerLinkActive="active-menu" class="nav-link"> Home Page </a>
         </li>
 
         <li class="nav-item">
-          <a routerLink="/about" class="nav-link">About Us</a>
+          <a routerLink="/about" routerLinkActive="active-menu" class="nav-link"> About Us </a>
         </li>
 
         <li class="nav-item">
-          <a routerLink="/circulars" class="nav-link">Circulars & Memos</a>
+          <a routerLink="/circulars" routerLinkActive="active-menu" class="nav-link"
+            >Circulars & Memos</a
+          >
         </li>
 
         <li class="nav-item dropdown">
@@ -67,9 +68,7 @@
         </li>
 
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-            Online Claim
-          </a>
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"> Online Claim </a>
 
           <ul class="dropdown-menu custom-dropdown">
             <li>
@@ -97,25 +96,22 @@
 
           <ul class="dropdown-menu custom-dropdown">
             <li><a class="dropdown-item">Empaneled Hospitals</a></li>
+            <li><a class="dropdown-item">Hospitals / Doctors Details</a></li>
             <li><a class="dropdown-item">Authenticate Beneficiary</a></li>
-            <li><a class="dropdown-item">Permission</a></li>
+            <li><a class="dropdown-item">View Permissions</a></li>
           </ul>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link">FAQ</a>
+          <a class="nav-link" routerLink="/faq" routerLinkActive="active-menu">FAQ</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link">Download</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link">Contact Us</a>
+          <a class="nav-link" routerLink="/contact" routerLinkActive="active-menu">Contact Us</a>
         </li>
       </ul>
 
-      <button class="btn btn-light login-btn">Login</button>
+      <button class="btn btn-light login-btn" routerLink="/login">Login</button>
     </div>
   </div>
 </nav>
