@@ -114,46 +114,24 @@
     <!-- Login tile(left-center-right) & strip PANEL -->
     <div class="col-12 mt-1">
       <div class="row mt-1">
-        <!-- Left final column -->
-        <div class="col-lg-2">
-          <a
-            href="https://finance.wb.gov.in/Fin_New/HomePage.aspx"
-            target="_blank"
-            class="card-link"
-          >
-            <div class="side-card card-button">
-              <div class="side-text">
-                Finance Department<br />
-                Government of West Bengal
+        <!-- GIA Statistics column -->
+        <div class="col-md-2">
+          <div class="stats-card">
+            <div class="stats-header">Grant-in-aid Statistics</div>
+            <div class="stats-body">
+              <div class="scroll-content employee-scroll">
+                @for (item of employeeStats; track item.title) {
+                  <div class="stats-item">
+                    <div class="label">{{ item.title }}</div>
+                    <div class="value">{{ item.value }}</div>
+                  </div>
+                }
               </div>
             </div>
-          </a>
-          <a
-            href="https://www.wbifms.gov.in/PORTAL/postlogin.html"
-            target="_blank"
-            class="card-link"
-          >
-            <div class="side-card mt-2 card-button">
-              <div class="logo-box card-button">
-                <img src="images/ifms_1.png" />
-              </div>
-            </div>
-          </a>
-          <a href="https://epension.wb.gov.in" target="_blank" class="card-link">
-            <div class="side-card mt-2 card-button">
-              <div class="logo-box">
-                <img src="images/e_payment.png" />
-              </div>
-
-              <div class="side-subtext">
-                Directorate of Pension, Provident Fund <br />
-                and Group Insurance
-              </div>
-            </div>
-          </a>
+          </div>
         </div>
 
-        <!-- Final Center column -->
+        <!-- Login tile Center column -->
         <div class="col-lg-8">
           <div class="portal-panel">
             <!-- bottom strip -->
@@ -180,8 +158,69 @@
           </div>
         </div>
 
-        <!-- Right final column -->
-        <div class="col-lg-2">
+        <!-- Panchayat Statistics column -->
+        <div class="col-md-2">
+          <div class="stats-card">
+            <div class="stats-header">Panchayat Statistics</div>
+            <div class="stats-body">
+              <div class="scroll-content pension-scroll">
+                @for (item of pensionerStats; track item.title) {
+                  <div class="stats-item">
+                    <div class="label">{{ item.title }}</div>
+                    <div class="value">{{ item.value }}</div>
+                  </div>
+                }
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 mt-1">
+      <div class="row mt-1">
+         <div class="col-lg-2">
+          <a
+            href="https://finance.wb.gov.in/Fin_New/HomePage.aspx"
+            target="_blank"
+            class="card-link"
+          >
+            <div class="side-card card-button">
+              <div class="side-text">
+                Finance Department<br />
+                Government of West Bengal
+              </div>
+            </div>
+          </a>
+         </div>
+         <div class="col-lg-2">
+          <a
+            href="https://www.wbifms.gov.in/PORTAL/postlogin.html"
+            target="_blank"
+            class="card-link"
+          >
+            <div class="side-card card-button">
+              <div class="logo-box card-button">
+                <img src="images/ifms_1.png" />
+              </div>
+            </div>
+          </a>
+         </div>
+         <div class="col-lg-2">
+          <a href="https://epension.wb.gov.in" target="_blank" class="card-link">
+            <div class="side-card card-button">
+              <div class="logo-box">
+                <img src="images/e_payment.png" />
+              </div>
+
+              <div class="side-subtext">
+                Directorate of Pension, Provident Fund <br />
+                and Group Insurance
+              </div>
+            </div>
+          </a>
+         </div>
+         <div class="col-lg-2">
           <a href="https://www.wbhealth.gov.in" target="_blank" class="card-link">
             <div class="side-card card-button">
               <div class="side-text">
@@ -190,9 +229,10 @@
               </div>
             </div>
           </a>
-
+         </div>
+         <div class="col-lg-2">
           <a href="https://eoffice.wb.gov.in" target="_blank" class="card-link">
-            <div class="side-card mt-2 card-button">
+            <div class="side-card card-button">
               <div class="logo-box">
                 <img src="images/e_office_btn_1.png" />
               </div>
@@ -203,9 +243,10 @@
               </div>
             </div>
           </a>
-
+         </div>
+         <div class="col-lg-2">
           <a href="https://epension.wb.gov.in" target="_blank" class="card-link">
-            <div class="side-card mt-2 card-button">
+            <div class="side-card card-button">
               <div class="logo-box">
                 <img src="images/CLG_UC.png" />
               </div>
@@ -216,7 +257,7 @@
               </div>
             </div>
           </a>
-        </div>
+         </div>
       </div>
     </div>
   </div>
